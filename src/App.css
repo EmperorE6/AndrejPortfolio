@@ -4,12 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
-.header{
+body{
   background-color: black;
+}
+.header{
+  background-color: rgb(0, 0, 0);
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 3px solid white;
 }
 .header.sticky{
   position:fixed;
@@ -41,6 +45,9 @@
   align-items: center;
   list-style: none;
 }
+.menu ul li{
+  cursor: pointer;
+}
 /*/  About Me */
 .desc-fullCont{
   margin: 0 auto;
@@ -58,6 +65,7 @@ margin-top: 10%;
 }
 .picture img{
   height: 100%;
+  border-radius: 3px;
 }
 .aboutMe {
   width: 300px;
@@ -67,7 +75,7 @@ margin-top: 10%;
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  color: black;
+  color: white;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
 }
@@ -75,7 +83,6 @@ margin-top: 10%;
 .educ-fullCont{
 margin: 0 auto;
 width: 900px;
-margin-top:15%;
 }
 .educ-container{
 display: flex;
@@ -116,12 +123,15 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+  color: white;
 }
 .degree-icon{
   margin-right: 8px;
+  filter: invert(1);
 }
 .certificate-icon{
   margin-right: 8px;
+  filter: invert(1);
 }
 .certificate-desc{
   font-family: "Montserrat Alternates", sans-serif;
@@ -136,7 +146,6 @@ align-items: center;
 .skills-container{
   justify-content: center;
   align-items: center;
-  margin-top:15%;
 }
 .programming-languages{
   display: flex;
@@ -179,6 +188,7 @@ align-items: center;
 }
 .soft-skills ul li{
   padding:10px;
+  color: white;
 }
 .sft_skills{
   opacity: 0;
@@ -195,6 +205,7 @@ transform: translateX(0);
   padding-bottom: 12px;
   font-family: "Lobster", sans-serif;
   text-decoration: underline;
+  color: white;
 }
 .titleEducation{
   font-weight: 400;
@@ -202,6 +213,7 @@ transform: translateX(0);
   padding-bottom: 12px;
   font-family: "Lobster", sans-serif;
   text-decoration: underline;
+  color: white;
 }
 .titleAboutMe{
   font-weight: 400;
@@ -209,34 +221,38 @@ transform: translateX(0);
   padding-bottom: 12px;
   font-family: "Lobster", sans-serif;
   text-decoration: underline;
+  color: white;
 }
 .titleSoftSkills{
   font-weight: 400;
   text-align: center;
   font-family: "Lobster", sans-serif;
   text-decoration: underline;
+  color: white;
 }
+/* Za myProject delo*/
 .projects-fullCont{
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  width: 1200px;
-  margin-top:15%;
+  width: 1400px;
+  height: 600px;
 }
 .projects-container{
   width: 100%;
-  height: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 .ProjectBlock{
-width: 100px;
-height: 100px;
+width: 140px;
+height: 370px;
 padding: 5px;
 }
 .imgSpace{
-  width:120px;
-  height:120px;
+  width:140px;
+  height:140px;
   cursor: pointer;
 }
 .imgSpace img{
@@ -250,4 +266,119 @@ object-fit: cover;
   padding-bottom: 12px;
   font-family: "Lobster", sans-serif;
   text-decoration: underline;
+  color: white;
+}
+.descSpace{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  width: 140px;
+  color: white;
+}
+.attention{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(88, 86, 83);
+}
+.also{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  color: rgb(88, 86, 83);
+}
+.line{
+  margin:0 auto;
+  width: 70%;
+  margin-top:7%;
+  margin-bottom: 7%;
+  border-bottom: 2px solid white;
+}
+.contact-container{
+  width: 600px;
+  height: 500px;
+  margin:0 auto;
+}
+.contact-Title{
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 12px;
+  font-family: "Lobster", sans-serif;
+  text-decoration: underline;
+  color: white;
+}
+.myContacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+}
+.linkedin, .gmail, .github, .phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.linkedin img {
+  height: 50px;
+  margin-right: 8px;
+}
+.linkedin-text{
+  color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size:22px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.gmail img{
+  height: 50px;
+  margin-right: 8px;
+}
+.gmail-text{
+  color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size:22px;
+}
+.github img{
+  height: 50px;
+  margin-right: 8px;
+}
+.github-text{
+  color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size:22px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.phone img{
+  height: 50px;
+  margin-right: 8px;
+}
+.phone-text{
+  color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size:22px;
+}
+.Est{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.established-text{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size:15px;
+  color: rgb(88, 86, 83);
 }
