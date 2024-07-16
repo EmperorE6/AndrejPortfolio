@@ -14,6 +14,7 @@ body{
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid white;
+  width: 100%;
 }
 .header.sticky{
   position:fixed;
@@ -382,3 +383,103 @@ object-fit: cover;
   font-size:15px;
   color: rgb(88, 86, 83);
 }
+
+/* Media Queries  */
+@media only screen and (max-width: 550px) {
+  .header {
+    height: 50px;
+    width: 100%;
+  }
+  .header.sticky{
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .left{
+    display: none;
+  }
+
+  .innerheader{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+  .menu {
+    width: 500px;
+  }
+  .desc-fullCont {
+    width: 100%;
+  }
+
+  .desc-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descAndIcon {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .academy{
+    margin-top: 12px;
+  }
+  .educ-fullCont{
+    width: 100%;
+  }
+  .educ-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-container{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .programming-languages{
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+  }
+  .block{
+    height: 50px;
+    width: 50px;
+  }
+ .projects-fullCont {
+  width: 100%;
+}
+.projects-container{
+  flex-direction: row;
+  align-items: flex-start;
+}
+.ProjectBlock{
+  width: 100px;
+  height: 100px;
+}
+.imgSpace{
+  width: 90px;
+  height: 90px;
+}
+.descSpace{
+  display: none;
+}
+.attention{
+  width: 100%;
+}
+.contact-container{
+  width: 100%;
+}
+.myContacts{
+  flex-direction: column;
+  align-items: center;
+}
+.linkedin, .gmail, .github, .phone{
+flex-direction: column;
+align-items: center;
+}
+}
+
